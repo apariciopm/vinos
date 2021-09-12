@@ -19,11 +19,20 @@ html{
 
 h1 {
     color: var(--color-wine);
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
 }
 
 p{
     color: var(--color-text);
+    font-size: 3rem;
 }
+
 
 
 
@@ -34,36 +43,26 @@ p{
 
 .main-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px;
-    margin: 0px;
+    grid-template-columns: 0.4fr 1fr 0.6fr 0.6fr;
+    grid-template-rows: 0.4fr 1fr 1fr 0.4fr;
+    gap: 1rem;
+    margin: 0rem;
     justify-content: center;
-    grid-template-areas: "header-img header header"
-                          "intro colaboradores variedades"
-                          "intro historia regiones"
-                          "footer footer footer ";
+    grid-template-areas: "header header header header"
+                          "intro intro colaboradores variedades"
+                          "intro intro historia regiones"
+                          "footer footer footer footer";
 
 }
 /* ENDS-----------------------------------------Main Grid body--------------------------------------------*/
 
 /* STARTS------Header format------------------------------------------- */
 
-.header-img{
-    display: grid;
-    grid-area: header-img;
-    text-align: center;
-    max-width: 100%;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    height: 50%;
-}
 
-.header{
+header{
     display: grid;
     text-align:center;
     grid-area: header;
-    font-size: 20px;
     background-color: goldenrod;
     max-width: 100%;
     height: 50%;
@@ -71,24 +70,15 @@ p{
    }
 
 
-
 .intro{
     display: grid;
     text-align:center;
     grid-area: intro;
     background-color: lawngreen;
-    text-align: center;
-    position: inherit;
+    text-align: left;
     max-width: 100%;
    
    }
-
-
-   img{
-    max-width: 100%;
-    height: auto;
-    align-content: center;
-}
 
 /* ENDS------------------------------------------Header format------------------------------------------- */
 
@@ -99,28 +89,27 @@ p{
     display: grid;
     text-align: center;
     grid-area: colaboradores;
-    font-size: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     max-width: 100%;
    }
 
 /* .tarjeta-colaboradores{
    justify-content: center;
    overflow: hidden;
-   box-shadow: 0px 2px 8px 0px var(--color-text);
+   box-shadow: 0rem 0.2rem 0.8rem 0rem var(--color-text);
    background-color: whitesmoke;
    text-align: center;
-   border-radius: 15px;
+   border-radius: 1.5rem;
    position: relative;
-   margin: 50px 300px 50px 300px;
+   margin: 0.5rem 0.3rem 0.5rem 0.3rem;
     
 }
 
 .img-background{
     position:absolute;
     background-image: url("../images/toscana.jpg");
-    height: 50px;
+    height: 0.5rem;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -133,7 +122,6 @@ p{
     display: grid;
     text-align:center;
     grid-area: variedades;
-    font-size: 20px;
     background-color: rgb(0, 101, 252);
     padding-top: auto;
     padding-bottom: auto;
@@ -145,7 +133,6 @@ p{
     display: grid;
     text-align:center;
     grid-area: historia;
-    font-size: 20px;
     background-color: lawngreen;
     padding-top: auto;
     padding-bottom: auto;
@@ -156,7 +143,6 @@ p{
     display: grid;
     text-align:center;
     grid-area: regiones;
-    font-size: 20px;
     background-color: rgb(0, 101, 252);
     padding-top: auto;
     padding-bottom: auto;
@@ -178,11 +164,10 @@ p{
 /* ENDS-----------------------------------------Section format------------------------------------------- */
 /* STARTS------Footer format------------------------------------------- */
 
-.footer{
+footer{
     display: grid;
     text-align:center;
     grid-area: footer;
-    font-size: 20px;
     background-color: rgb(0, 101, 252);
     padding-top: auto;
     padding-bottom: auto;
